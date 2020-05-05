@@ -1,5 +1,5 @@
-import React from '../code/src/react'
-import ReactDOM from '../code/src/react-dom'
+import React from 'react'
+import ReactDOM from 'react-dom'
 import './index.css'
 import { App } from './App'
 

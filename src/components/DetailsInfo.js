@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "../code/src/react";
-import { Link, useParams } from "../code/src/react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useParams } from "react-router-dom";
 import './DetailStyle.css'
 
 export const DetailsInfo = () => {
