@@ -1,11 +1,14 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Header } from './components/Header'
 import { PopularSongs } from './components/PopularSongs'
 import { DetailsInfo } from './components/DetailsInfo'
 
+
 export const App = () => {
   return (
-    // <Header />
+    <main>
+    {/* <Header /> */}
     <BrowserRouter>
       <Switch>
 
@@ -20,5 +23,6 @@ export const App = () => {
 
       </Switch>
     </BrowserRouter>
+    </main>
   )
 }
