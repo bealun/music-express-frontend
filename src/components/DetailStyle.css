@@ -50,7 +50,8 @@ span {
 }
 
 .artist {
-  font-style: italic;
+  /* font-style: italic; */
+  text-transform: uppercase;
 }
 
 .genre {
