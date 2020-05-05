@@ -1,5 +1,5 @@
-import React from 'react'
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import React from '../code/src/react'
+import { BrowserRouter, Switch, Route } from "../code/src/react-router-dom";
 import { PopularSongs } from './components/PopularSongs'
 import { DetailsInfo } from './components/DetailsInfo'
 
