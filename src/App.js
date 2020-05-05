@@ -14,7 +14,7 @@ export const App = () => {
         </Route>
 
 
-        <Route path="/:id">
+        <Route path="/song/:id">
           <DetailsInfo />
         </Route>
 

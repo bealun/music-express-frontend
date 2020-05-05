@@ -20,7 +20,7 @@ export const PopularSongs = () => {
       <div className="listContent">
         {songs.map(song => (
           <section className="songs">
-          <Link to={`/song/${song.id}`}>
+          <Link to={`/song/${song.id}`} key={song.id}>
 
             <div className="itemInfo">
               <h4>{song.trackName}</h4>
