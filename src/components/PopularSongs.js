@@ -21,7 +21,7 @@ export const PopularSongs = () => {
   if (loading) {
     return <div className="loadingState">
         <h1>Loading...</h1>
-        <RingLoader color="teal" size="80"/>
+        <RingLoader color="teal" size="80px"/>
       </div>
   }
 
