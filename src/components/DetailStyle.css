@@ -61,3 +61,12 @@ span {
 h3 {
   font-size: 26px;
 }
+
+.loadingState {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}

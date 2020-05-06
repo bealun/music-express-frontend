@@ -1,19 +1,29 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { RingLoader } from 'react-spinners'
 import './ListStyle.css'
 
 export const PopularSongs = () => {
   const [songs, setSongs] = useState([]) 
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
+    setLoading(true)
     fetch(`https://bealun-express-api.herokuapp.com/song`)
       .then(res => res.json())
       .then(json => {
         console.log('This is data:', json)
         setSongs(json)
+        setLoading(false)
       })
   }, [])
 
+  if (loading) {
+    return <div className="loadingState">
+        <h1>Loading...</h1>
+        <RingLoader color="teal" size="80"/>
+      </div>
+  }
 
   return (
     // <main>
